@@ -1,11 +1,11 @@
-# [Título del trabajo]
+# BUSCAMINAS
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+Vamos a realizar una versión "lite" del clásico buscaminas.
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+ Jesus Marin Delgado @jesuppedia
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Pretendo que este programa coloque en un tablero una serie de objetivos para que el jugador, mediante pistas numericas, halle su lugar, si el usuario descubre una mina sin marcar su posicion perdera.
