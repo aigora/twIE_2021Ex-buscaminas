@@ -76,7 +76,6 @@ void iniciarTablero(char tablero[F][C]) {
 void Encabezado() {
   int a;
   for (a = 0; a <= C; a++) {
-    system("color 02");
     printf("____");   //esto es simplemente para que se vea algo bonito
     if (a + 2 == C) {     //y separar filas y columnas mejor, si no todo seria un monton de puntos
       printf("_");
@@ -87,7 +86,6 @@ void Encabezado() {
 void Filas() {
   int a;
   for (a = 0; a <= C; a++) {
-    system("color 03");
     printf("____");
     if (a == C) {
       printf("|");
@@ -102,7 +100,6 @@ void mostrarEncabezado() {
   for (l = 0; l < C; l++) {
     printf("| %d ", l + 1);
     if (l + 1 == C) {
-      system("color 05");
       printf("|");
     }
   }
@@ -176,8 +173,7 @@ pf2 = fopen ("fichero.csv","a");
 pf2 = fopen ("fichero.csv","r");
 pf=fopen("buscaminas.c","a");
 int n;
- system("color 05");
-printf("bienvenido al buscaminas multicolor, ¿quiere jugar? si[2], no[1]\n");
+printf("bienvenido al buscaminas, ¿quiere jugar? si[2], no[1]\n");
 scanf("%d", &n);
 if (n % 2 == 0){
   char tablero[F][C];
@@ -194,16 +190,13 @@ if (n % 2 == 0){
     }
     int columna;
     char fila;
-     system("color 09");
     printf("Dinos la columna: ");
     scanf("%d", &columna);
-     system("color 06");
     printf("Dinos la fila:");
     scanf(" %c", &fila);
     int status = abrirCasilla(fila, columna, tablero);
     if (nohayCasillascerradas(tablero))
     {
-      system("color 03");
       printf("Has ganado, enhorabuena\n");
       deberiaMostrarMinas = 1;
     }
